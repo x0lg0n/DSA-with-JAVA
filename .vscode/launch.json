@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "binarySearch",
+            "request": "launch",
+            "mainClass": "binarySearch",
+            "projectName": "DSA_440bf2ac"
+        },
+        {
+            "type": "java",
+            "name": "upperBound",
+            "request": "launch",
+            "mainClass": "upperBound",
+            "projectName": "DSA_440bf2ac"
+        },
+        {
+            "type": "java",
+            "name": "lowerBound",
+            "request": "launch",
+            "mainClass": "lowerBound",
+            "projectName": "DSA_440bf2ac"
+        },
+        {
+            "type": "java",
             "name": "Implementation",
             "request": "launch",
             "mainClass": "Implementation",
