@@ -1,10 +1,23 @@
+import java.util.Scanner;
+
 public class upperBound {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[5];
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
         
+        int x = sc.nextInt();
+
+        System.out.println(upperBoundB(arr, n, x));
+        System.out.println(upperBoundO(arr, n, x));
+        sc.close();
     }
 
     // Brute Force Approach
-     private int upperBound(int[] arr, int n, int x) {
+     private static int upperBoundB(int[] arr, int n, int x) {
         for (int i = 0; i < n; i++) {
             if (arr[i] > x) { 
                 // Lower Bound Found
@@ -19,7 +32,8 @@ public class upperBound {
 
     
     // Optimal Approach
-    private int upperBound(int[] arr, int low, int high, int target){
+    private static int upperBoundO(int[] arr, int n, int target){
+        int low = 0, high = n - 1;
         int ans = arr.length;
         while (low <= high) {
             int mid = low + (high - low) / 2;

@@ -1,6 +1,4 @@
 public class Function{
-    
-
     public static void main(final String args[]){
         final Function obj = new Function();
         obj.Thunder();

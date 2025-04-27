@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class lowerBound {
+public class searchInsert {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] arr = new int[5];
+        int[] arr = new int[4];
 
         int n = arr.length; // length of the array
 
@@ -11,20 +11,19 @@ public class lowerBound {
             arr[i] = sc.nextInt();
         }
 
-        int x = sc.nextInt(); // element to find lower bound
-
-        System.out.println(lowerBoundL(arr, n, x));
-        System.out.println(lowerBoundO(arr, n, x));
+        int target = sc.nextInt();
+        
+        System.out.println(searchInsertB(arr, target));
+        System.out.println(searchInsertO(arr, target));
 
         sc.close();
-        
     }
 
-    // Brute Force Approach
-    private static int lowerBoundL(int[] arr, int n, int x) {
+    // Brute Force Approach 
+    private static int searchInsertB(int[] arr, int target) {
+        int n = arr.length;
         for (int i = 0; i < n; i++) {
-            if (arr[i] >= x) { 
-                // Lower Bound Found
+            if (arr[i] >= target) {
                 return i;
             }
         }
@@ -34,11 +33,11 @@ public class lowerBound {
     // Time Complexity:- O(N)
     // Space Complexity:- O(1)
 
-    
     // Optimal Approach
-    private static int lowerBoundO(int[] arr, int n, int target){
+    private static int searchInsertO(int[] arr, int target) {
+        int n = arr.length;
         int low = 0, high = n - 1;
-        int ans = arr.length;
+        int ans = n;
         // perform the steps
         while (low <= high) {
             int mid = low + (high - low) / 2;
@@ -58,5 +57,4 @@ public class lowerBound {
     // Complexity Analysis: 
     // Time Complexity:- O(log N)
     // Space Complexity:- O(1)
-
 }
