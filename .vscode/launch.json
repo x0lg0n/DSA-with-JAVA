@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayExample",
+            "request": "launch",
+            "mainClass": "ArrayExample",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
+            "name": "Temperature",
+            "request": "launch",
+            "mainClass": "Temperature",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
+            "name": "Loops",
+            "request": "launch",
+            "mainClass": "Loops",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
+            "name": "TypeCasting",
+            "request": "launch",
+            "mainClass": "TypeCasting",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "Basics",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
             "name": "binarySearch",
             "request": "launch",
             "mainClass": "binarySearch",
