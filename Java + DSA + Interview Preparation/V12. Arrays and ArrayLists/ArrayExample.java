@@ -42,12 +42,11 @@ public class ArrayExample {
 
         System.out.println(Arrays.toString(str));
         print(arr, n);
-
-        // Passing Array in Function 
         
         sc.close();
     }
 
+    // Passing Array in Function 
     public static void print(int[] nums, int n) {
         System.out.println(Arrays.toString(nums));
     }
