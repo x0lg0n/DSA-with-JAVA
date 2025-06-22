@@ -7,15 +7,15 @@ public class MultiDimensionalArray {
 
         /*
          * int[][] arr = {
-         *      {1, 2, 3},   // 0th Index
-         *      {4, 5},  //1st Index
-         *      {6, 7, 8, 9} // 2nd Index -> arr[2] = {6, 7, 8, 9}
+         *  {1, 2, 3}, // 0th Index
+         *  {4, 5}, //1st Index
+         *  {6, 7, 8, 9} // 2nd Index -> arr[2] = {6, 7, 8, 9}
          * };
          * 
          */
-        
+
         int[][] arr = new int[3][3];
-        System.out.println(arr.length);  // no of rows
+        System.out.println(arr.length); // no of rows
 
         // input
         for (int row = 0; row < arr.length; row++) {
@@ -26,11 +26,10 @@ public class MultiDimensionalArray {
 
         // output
         for (int row = 0; row < arr.length; row++) {
-           System.out.println(Arrays.toString(arr[row]));
+            System.out.println(Arrays.toString(arr[row]));
         }
-    
+
         sc.close();
     }
 
 }
- 

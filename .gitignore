@@ -1,3 +1,82 @@
-.vscode
-input.txt
+# Python-specific
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Java-specific
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# C++-specific
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.so
+*.a
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
 output.txt
+input.txt
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build and dependency directories
+node_modules/
+dist/
+build/
+out/
+
+# Miscellaneous
+*.log
+*.bak
+*.tmp
+*.temp
+*.swp
+
+# Documentation build outputs
+Docs/_build/
+Docs/site/
+
+# Environment variables
+.env
+*.env
+
+# Coverage and testing
+.coverage
+coverage/
+*.cover
+*.cov
+pytest_cache/
+
+# GitHub Pages artifacts
+_site/
+jekyll/
+
+# Personal notes or temporary files
+*.md.bak
+*.txt
+scratch/
+temp/

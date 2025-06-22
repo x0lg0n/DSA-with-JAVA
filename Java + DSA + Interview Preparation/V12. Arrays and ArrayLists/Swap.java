@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Swap {
     public static void main(String[] args) {
-        int[] arr = {4, 8, 9, 2, 1, 45, 5};
+        int[] arr = { 4, 8, 9, 2, 1, 45, 5 };
         System.out.println("Array before Swapping: " + Arrays.toString(arr));
         swap(arr, 1, 3);
         System.out.println("Array after Swapping: " + Arrays.toString(arr));
