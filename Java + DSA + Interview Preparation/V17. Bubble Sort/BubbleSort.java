@@ -5,7 +5,7 @@ public class BubbleSort {
         int[] arr = { 5, 8, 2, 0, 1, 6, 9, 3 };
         bubble(arr);
         System.out.println(Arrays.toString(arr));
-        ;
+        
     }
 
     public static void bubble(int[] arr) {
@@ -28,7 +28,5 @@ public class BubbleSort {
                 break;
             }
         }
-
     }
-
 }
