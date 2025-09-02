@@ -4,12 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    {
-        "type": "java",
-        "name": "Launch Current File",
-        "request": "launch",
-        "mainClass": "${file}"
-    },
+        {
+            "type": "java",
+            "name": "FindDisapperedNum",
+            "request": "launch",
+            "mainClass": "FindDisapperedNum",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
         {
             "type": "java",
             "name": "SearchIn2DArray",
