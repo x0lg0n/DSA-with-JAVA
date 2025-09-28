@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseANumber",
+            "request": "launch",
+            "mainClass": "ReverseANumber",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
             "name": "FindDisapperedNum",
             "request": "launch",
             "mainClass": "FindDisapperedNum",
