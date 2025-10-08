@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
             "name": "ReverseANumber",
             "request": "launch",
             "mainClass": "ReverseANumber",
