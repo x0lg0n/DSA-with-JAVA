@@ -60,7 +60,7 @@ public class NKnights {
         return false;
     }
 
-    private static void display(boolean[][] board) {
+    public static void display(boolean[][] board) {
         for (boolean[] row : board) {
             for (boolean element : row) {
                 if (element) {
