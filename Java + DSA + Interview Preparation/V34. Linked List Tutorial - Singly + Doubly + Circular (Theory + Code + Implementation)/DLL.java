@@ -24,7 +24,10 @@ public class DLL {
             this.prev = prev;
         }
     }
-
+    
+    // -------------------------
+    //         DISPLAY
+    // -------------------------
     // Function to display values of linked list
     public void display() {
         Node temp = head;
@@ -66,7 +69,7 @@ public class DLL {
     }
 
     // -------------------------
-    // INSERTION
+    //        INSERTION
     // -------------------------
     // Function to insert element at the start of linked list
     public void insertAtFirst(int val) {
@@ -138,20 +141,22 @@ public class DLL {
         size++;
     }
 
-    // Main Function
+    // -------------------------
+    //       MAIN FUNCTION
+    // -------------------------
     public static void main(String[] args) {
         DLL list = new DLL();
         list.insertAtFirst(10);
         list.insertAtFirst(20);
         list.insertAtFirst(30);
         list.display();
-        // System.out.println();
-        // list.insertAtLast(40);
-        // list.insertAtLast(50);
-        // list.display();
-        // System.out.println();
-        // list.insert(14, 3);
-        // list.display();
+        System.out.println();
+        list.insertAtLast(40);
+        list.insertAtLast(50);
+        list.display();
+        System.out.println();
+        list.insert(14, 3);
+        list.display();
         System.out.println();
         list.insert(12, 1);
         list.display();

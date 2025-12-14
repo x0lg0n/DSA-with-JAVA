@@ -23,6 +23,9 @@ public class CLL {
         }
     }   
 
+    // -------------------------
+    //         DISPLAY
+    // -------------------------
     // Funsction to display values of Linked List
     public void display() {
         Node temp = head;
@@ -53,7 +56,7 @@ public class CLL {
     }
 
     // -------------------------
-    // DELETION
+    //         DELETION
     // -------------------------
     // Function to delete the element from linked list
     public void delete(int val) {
@@ -79,7 +82,9 @@ public class CLL {
     }
 
 
-    // Main Function
+    // -------------------------
+    //       MAIN FUNCTION
+    // -------------------------
     public static void main(String[] args) {
         CLL list = new CLL();
         list.insert(12);

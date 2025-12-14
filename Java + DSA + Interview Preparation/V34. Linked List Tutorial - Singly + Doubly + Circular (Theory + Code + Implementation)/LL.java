@@ -23,6 +23,9 @@ public class LL {
         }
     }
 
+    // -------------------------
+    //        DISPLAY
+    // -------------------------
     // Funsction to display values of Linked List
     public void display() {
         Node temp = head;
@@ -33,6 +36,9 @@ public class LL {
         System.out.println("END");
     }
 
+    // -------------------------
+    //         SIZE
+    // -------------------------
     // Funstion to print the size of Linked List
     public void size() {
         int size = 0;
@@ -66,7 +72,7 @@ public class LL {
     }
 
     // -------------------------
-    // INSERTION
+    //        INSERTION
     // -------------------------
     // Function to insert element at the start of linked list
     public void insertFirst(int val) {
@@ -136,7 +142,7 @@ public class LL {
     }
 
     // -------------------------
-    // DELETION
+    //        DELETION
     // -------------------------
     // Function to delete the first element from linked list
     public int deleteFirst() {
@@ -179,7 +185,9 @@ public class LL {
         return val;
     }
 
-    // Main Function
+    // -------------------------
+    //       MAIN FUNCTION
+    // -------------------------
     public static void main(String[] args) {
         LL list = new LL();
         list.insertFirst(5);
