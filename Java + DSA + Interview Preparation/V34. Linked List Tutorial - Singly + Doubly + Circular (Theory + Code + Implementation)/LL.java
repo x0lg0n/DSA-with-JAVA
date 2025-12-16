@@ -186,26 +186,190 @@ public class LL {
     }
 
     // -------------------------
+    //       QUESTIONS
+    // -------------------------
+
+    // Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+    public void duplicates() {
+        Node node = head;
+
+        while (node.next != null) {
+            if (node.val == node.next.val) {
+                node.next = node.next.next;
+                size--;
+            }
+            else {
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
+    }
+
+    // Link: https://leetcode.com/problems/merge-two-sorted-lists/
+    public static LL mergeTwoLists(LL list1, LL list2) {
+        Node f = list1.head;
+        Node s = list2.head;
+
+        LL ans = new LL();
+
+        while (f != null && s != null) {
+            if (f.val < s.val) {
+                ans.insertFirst(f.val);
+                f = f.next;
+            } else {
+                ans.insertFirst(s.val);
+                s = s.next;
+            }
+        }
+
+        while (f != null) {
+            ans.insertFirst(f.val);
+            f = f.next;
+        }
+
+        while (s != null) {
+            ans.insertFirst(s.val);
+            s = s.next;
+        }
+
+        return ans;
+    } 
+
+    // Link: https://leetcode.com/problems/linked-list-cycle/
+    public boolean hasCycle(Node head) {
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if (fast == slow) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public int cycleLenght(Node head) {
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if (fast == slow) {
+                Node temp = slow;
+                int length = 0;
+                do {
+                    temp = temp.next;
+                    length++;
+                } while (temp != slow);
+                return length;
+            }
+        }
+        return 0;
+    }
+
+    // Link: https://leetcode.com/problems/linked-list-cycle-ii/
+    public Node detectCycle(Node head) {
+        int lenght = 0;
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if (fast == slow) {
+                lenght = cycleLenght(slow);
+                break;
+            }
+        }
+
+        if (lenght == 0) {
+            return null;
+        }
+
+        // find the start node 
+        Node f = head;
+        Node s = head;
+
+        while (lenght > 0) {
+            s = s.next;
+            lenght--;
+        }
+
+        // keep moving both forward and they will meet at cycle start
+        while (f != s) {
+            f = f.next;
+            s = s.next;
+        }
+
+        return s;
+    }
+    
+    // link: https://leetcode.com/problems/happy-number/
+    public boolean isHappy(int n) {
+        int slow = n;
+        int fast = n;
+
+        do {
+            slow = findSqaure(n);
+            fast = findSqaure(findSqaure(n));
+        } while (slow != fast);
+
+        if (slow == 1) {
+            return true;
+        }
+        return false;
+    } 
+
+    private int findSqaure(int n) {
+        int ans = 0;
+        while (n > 0) {
+            int rem = n % 10;
+            ans += rem * rem;
+            n /= 10;
+        }
+        return ans;
+    }
+
+    // link: https://leetcode.com/problems/middle-of-the-linked-list/   
+    public Node middleNode(Node head) {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && slow != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+
+    // -------------------------
     //       MAIN FUNCTION
     // -------------------------
     public static void main(String[] args) {
         LL list = new LL();
-        list.insertFirst(5);
+        LL list2 = new LL();
         list.insertFirst(7);
-        list.insertFirst(17);
+        list.insertFirst(6);
+        list.insertFirst(5);
         list.display();
-        list.insertLast(12);
-        list.insert(3, 45);
-        list.insert(4, 0);
-        list.display();
-        list.size();
-        System.out.println(list.deleteFirst());
-        list.display();
-        System.out.println(list.deleteLast());
-        list.display();
-        list.size();
-        list.insertRec(1000, 3);
-        list.display();
+        list2.insertFirst(17);
+        list2.insertFirst(12);
+        list2.insertFirst(8);
+        list2.insertFirst(5);
+        list2.insertFirst(2);
+        list2.display();
+        LL ans = mergeTwoLists(list, list2);
+        ans.display();
+        
+        
     }
 
 }
