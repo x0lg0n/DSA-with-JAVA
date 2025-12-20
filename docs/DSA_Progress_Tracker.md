@@ -3,7 +3,8 @@
 ## 📊 Weekly Progress Tracking Template
 
 ### Week Progress Summary
-```
+
+```Markdown
 WEEK __: _________________ (Dates: ___/__ to ___/__)
 
 📈 QUANTITATIVE METRICS:
@@ -51,9 +52,10 @@ Secondary Pattern: ___________
 
 ## 🎯 Pattern Mastery Checklist
 
-### Core Pattern Status (Check when comfortable):
+### Core Pattern Status (Check when comfortable)
 
 #### **Month 1 Patterns:**
+
 - [ ] **Arrays & Hashing**: Can solve Two Sum variants quickly
 - [ ] **Two Pointers**: Recognize when to use opposite vs same direction
 - [ ] **Sliding Window**: Distinguish fixed vs variable window problems
@@ -61,6 +63,7 @@ Secondary Pattern: ___________
 - [ ] **Linked Lists**: Implement reversals and cycle detection
 
 #### **Month 2 Patterns:**
+
 - [ ] **Tree Traversals**: All DFS/BFS variations (recursive/iterative)
 - [ ] **BST Operations**: Validate, search, insert, delete
 - [ ] **Graph Algorithms**: DFS/BFS for connectivity and shortest paths
@@ -68,6 +71,7 @@ Secondary Pattern: ___________
 - [ ] **Advanced Trees**: Path problems and tree DP
 
 #### **Month 3 Patterns:**
+
 - [ ] **1D Dynamic Programming**: Bottom-up and top-down approaches
 - [ ] **2D Dynamic Programming**: Grid and string matching problems
 - [ ] **Backtracking**: Generate all combinations/permutations
@@ -78,9 +82,10 @@ Secondary Pattern: ___________
 
 ## 🚀 Multi-Language Code Templates for Essential Patterns
 
-*Choose your preferred language: Python, Java, or C++*
+### *Choose your preferred language: Python, Java, or C++*
 
 ### 1. Binary Search Template
+
 ```python
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
@@ -117,6 +122,7 @@ def find_first_occurrence(arr, target):
 ```
 
 ### 2. Two Pointers Template
+
 ```python
 # Opposite direction (for sorted arrays)
 def two_sum_sorted(arr, target):
@@ -157,6 +163,7 @@ def find_cycle_start(head):
 ```
 
 ### 3. Sliding Window Template
+
 ```python
 # Fixed window size
 def max_sum_subarray(arr, k):
@@ -200,6 +207,7 @@ def longest_substring_k_distinct(s, k):
 ```
 
 ### 4. DFS Tree Traversal Template
+
 ```python
 # Recursive DFS
 def dfs_recursive(root):
@@ -230,6 +238,7 @@ def dfs_iterative(root):
 ```
 
 ### 5. BFS Template
+
 ```python
 from collections import deque
 
@@ -259,6 +268,7 @@ def bfs_level_order(root):
 ```
 
 ### 6. Dynamic Programming Template
+
 ```python
 # 1D DP - Bottom up
 def fibonacci(n):
@@ -285,6 +295,7 @@ def unique_paths(m, n):
 ```
 
 ### 7. Backtracking Template
+
 ```python
 def backtrack_combinations(nums):
     result = []
@@ -314,7 +325,8 @@ def backtrack_combinations(nums):
 ## 📈 Problem Difficulty Progression Tracker
 
 ### Month 1: Foundation Building
-```
+
+```Markdown
 Week 1: Arrays & Hashing
 Easy: ___/16  Medium: ___/9  Hard: ___/1
 
@@ -331,7 +343,8 @@ Month 1 Total: Easy: ___/45  Medium: ___/51  Hard: ___/6
 ```
 
 ### Month 2: Advanced Data Structures
-```
+
+```Markdown
 Week 5-6: Trees & BST
 Easy: ___/18  Medium: ___/32  Hard: ___/0
 
@@ -345,7 +358,8 @@ Month 2 Total: Easy: ___/29  Medium: ___/59  Hard: ___/5
 ```
 
 ### Month 3: Advanced Algorithms
-```
+
+```Markdown
 Week 9-10: Dynamic Programming
 Easy: ___/10  Medium: ___/35  Hard: ___/5
 
@@ -359,6 +373,7 @@ Month 3 Total: Easy: ___/18  Medium: ___/50  Hard: ___/9
 ```
 
 ### **OVERALL PROGRAM TOTAL:**
+
 **Easy: ___/92  Medium: ___/160  Hard: ___/20**
 **Grand Total: ___/272 problems**
 
@@ -367,7 +382,8 @@ Month 3 Total: Easy: ___/18  Medium: ___/50  Hard: ___/9
 ## 🎯 Mock Interview Performance Tracker
 
 ### Interview Practice Log
-```
+
+```Text
 Date: ___/___/____
 Platform: ________________
 Duration: _____ minutes
@@ -409,26 +425,31 @@ ACTION ITEMS:
 ## 📚 Company-Specific Focus Areas
 
 ### **Google/Alphabet**
+
 - **Heavy Focus**: Tree algorithms, graph traversal, system design
 - **Common Patterns**: DFS/BFS, dynamic programming, complex tree problems
 - **Preparation**: Emphasize explanation and multiple solutions
 
 ### **Amazon**
+
 - **Heavy Focus**: Array/string manipulation, OOP design
 - **Common Patterns**: Two pointers, sliding window, basic DP
 - **Preparation**: Leadership principles + coding balance
 
 ### **Microsoft**
+
 - **Heavy Focus**: Balanced across all patterns
 - **Common Patterns**: All fundamental patterns equally
 - **Preparation**: Clear communication and systematic approach
 
 ### **Facebook/Meta**
+
 - **Heavy Focus**: Graph algorithms, tree traversal
 - **Common Patterns**: BFS/DFS, graph connectivity, tree problems
 - **Preparation**: Scalability discussions
 
 ### **Apple**
+
 - **Heavy Focus**: System design + moderate coding
 - **Common Patterns**: Clean code, OOP principles
 - **Preparation**: Product thinking + technical depth
@@ -437,7 +458,8 @@ ACTION ITEMS:
 
 ## 🏆 Final Month Checklist
 
-### Week 12 Interview Readiness Assessment:
+### Week 12 Interview Readiness Assessment
+
 - [ ] Can solve medium problems in < 25 minutes consistently
 - [ ] Explain approach clearly before coding
 - [ ] Identify time/space complexity immediately
@@ -449,7 +471,8 @@ ACTION ITEMS:
 - [ ] Completed 20+ mock interviews
 - [ ] Familiar with company-specific question patterns
 
-### Final Week Daily Schedule:
+### Final Week Daily Schedule
+
 - **Monday**: Review top 50 problems from your weak patterns
 - **Tuesday**: Full mock interview + system design practice
 - **Wednesday**: Company research + behavioral prep

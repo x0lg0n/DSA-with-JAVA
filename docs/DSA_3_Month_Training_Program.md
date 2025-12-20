@@ -5,6 +5,7 @@
 This comprehensive 3-month Data Structures & Algorithms training program is designed specifically for technical interview preparation at top tech companies (FAANG and beyond). The program follows a pattern-based approach, focusing on the most frequently asked coding patterns in interviews.
 
 ### 📈 Success Metrics
+
 - Complete 300+ LeetCode problems across all difficulty levels
 - Master 15+ essential coding patterns
 - Achieve consistent performance in mock interviews
@@ -15,13 +16,16 @@ This comprehensive 3-month Data Structures & Algorithms training program is desi
 ## 📅 Month 1: Foundation & Core Patterns
 
 ### Week 1: Arrays & Hashing Fundamentals
+
 **Goal**: Master basic data structures and build problem-solving fundamentals
 
 #### Daily Schedule (2-3 hours/day):
+
 - **Morning (1 hour)**: Theory and concept review
 - **Evening (1-2 hours)**: Problem solving and implementation
 
 #### Topics & Patterns:
+
 1. **Array Manipulation**
    - Two Sum, Three Sum variations
    - Array rotation and manipulation
@@ -34,15 +38,18 @@ This comprehensive 3-month Data Structures & Algorithms training program is desi
    - **Key Problems**: Group Anagrams, Top K Frequent Elements, Longest Substring Without Repeating Characters
 
 #### Practice Schedule:
+
 - **Monday-Tuesday**: Array basics (8-10 problems)
 - **Wednesday-Thursday**: Hash table fundamentals (8-10 problems)
 - **Friday**: Mixed review problems (5-6 problems)
 - **Weekend**: Weekly assessment + review weak areas
 
 ### Week 2: Two Pointers & Sliding Window
+
 **Goal**: Master efficient array/string traversal techniques
 
 #### Core Patterns:
+
 1. **Two Pointers**
    - Opposite directional pointers
    - Same directional pointers
@@ -54,15 +61,18 @@ This comprehensive 3-month Data Structures & Algorithms training program is desi
    - **Key Problems**: Longest Substring Without Repeating Characters, Minimum Window Substring, Sliding Window Maximum
 
 #### Practice Schedule:
+
 - **Monday-Tuesday**: Two Pointers (10-12 problems)
 - **Wednesday-Thursday**: Sliding Window (10-12 problems)
 - **Friday**: Advanced combinations (6-8 problems)
 - **Weekend**: Pattern review + mock interview practice
 
 ### Week 3: Sorting & Searching
+
 **Goal**: Master searching algorithms and their variations
 
 #### Core Patterns:
+
 1. **Binary Search**
    - Standard binary search
    - Search in rotated arrays
@@ -75,15 +85,18 @@ This comprehensive 3-month Data Structures & Algorithms training program is desi
    - **Key Problems**: Merge Intervals, Sort Colors, Kth Largest Element
 
 #### Practice Schedule:
+
 - **Monday-Tuesday**: Binary Search fundamentals (10-12 problems)
 - **Wednesday-Thursday**: Advanced searching (8-10 problems)
 - **Friday**: Sorting applications (6-8 problems)
 - **Weekend**: Combined patterns + assessment
 
 ### Week 4: Linked Lists & Stacks/Queues
+
 **Goal**: Master linear data structures and their manipulations
 
 #### Core Patterns:
+
 1. **Linked List Manipulation**
    - Reversal techniques
    - Cycle detection
@@ -96,6 +109,7 @@ This comprehensive 3-month Data Structures & Algorithms training program is desi
    - **Key Problems**: Valid Parentheses, Daily Temperatures, Implement Queue using Stacks
 
 #### Practice Schedule:
+
 - **Monday-Tuesday**: Linked List basics (12-15 problems)
 - **Wednesday-Thursday**: Stack/Queue patterns (10-12 problems)
 - **Friday**: Advanced manipulations (8-10 problems)
@@ -106,6 +120,7 @@ This comprehensive 3-month Data Structures & Algorithms training program is desi
 ## 📅 Month 2: Trees, Graphs & Advanced Patterns
 
 ### Week 5-6: Trees & Tree Traversals
+
 **Goal**: Master tree-based algorithms and traversal patterns
 
 #### Core Patterns:
