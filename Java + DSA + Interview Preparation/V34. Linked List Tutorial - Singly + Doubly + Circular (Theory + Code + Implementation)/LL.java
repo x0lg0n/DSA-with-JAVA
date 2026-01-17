@@ -13,6 +13,10 @@ public class LL {
         int val;
         Node next;
 
+        public Node() {
+
+        }
+
         public Node(int val) {
             this.val = val;
         }
@@ -350,7 +354,85 @@ public class LL {
         return slow;
     }
 
-    
+    // https://leetcode.com/problems/sort-list/
+    public Node sortList(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node mid = getMid(head);
+        Node left = sortList(head);
+        Node right = sortList(mid);
+
+        return merge(left, right);
+    }
+
+    Node merge(Node list1, Node list2) {
+        Node dummyHead = new Node();
+        Node tail = dummyHead;
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                tail.next = list1;
+                list1 = list1.next;
+                tail = tail.next;
+            } else {
+                tail.next = list2;
+                list2 = list2.next;
+                tail = tail.next;
+            }
+        }
+
+        tail.next = (list1 != null) ? list1 : list2;
+        return dummyHead.next;
+
+    }
+
+    Node getMid(Node head) {
+        Node midPrev = null;
+        while (head != null && head.next != null) {
+            midPrev = (midPrev == null) ? head : midPrev.next;
+            head = head.next.next;
+        }
+        Node mid = midPrev.next;
+        midPrev.next = null;
+        return mid;
+    }
+
+    // Bubble Sort 
+
+    // Recursion Reversal Of Linked List
+    public void reverse(Node node) {
+        if (node == tail) {
+            head = tail;
+            return;
+        }
+
+        reverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
+
+    // https://leetcode.com/problems/reverse-linked-list/
+    // In place Reversal of Linked 
+    public void reverse() {
+        if (head == null) {
+            return;
+        }
+
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
+
+        while (present != null) {
+            present.next = prev;
+            prev = present;
+            present = next;
+            if (next != null) {
+                next = next.next;
+            }
+        }
+        head = prev;
+    } 
 
     // -------------------------
     //       MAIN FUNCTION
@@ -370,7 +452,8 @@ public class LL {
         list2.display();
         LL ans = mergeTwoLists(list, list2);
         ans.display();
-        
+        list2.reverse();
+        list2.display();
         
     }
 

@@ -1,6 +1,6 @@
+import src.main.java.dsa.BinarySearch;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import dsa.BinarySearch;
 
 public class BinarySearchTest {
 
