@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidParantheses",
+            "request": "launch",
+            "mainClass": "ValidParantheses",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
+            "name": "LargestRecHistogram",
+            "request": "launch",
+            "mainClass": "LargestRecHistogram",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
             "name": "LL",
             "request": "launch",
             "mainClass": "LL",

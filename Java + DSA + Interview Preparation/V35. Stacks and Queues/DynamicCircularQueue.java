@@ -1,15 +1,16 @@
+// import java.util.Queue;
+// // Ensure CircularQueue is in the same package or import it if needed
+// public class DynamicCircularQueue extends Queue {
+//     private DynamicCircularQueue() {
+//         super();
+//     }
 
-public class DynamicCircularQueue extends CircularQueue {
-    private DynamicCircularQueue() {
-        super();
-    }
+//     private DynamicCircularQueue(int size) {
+//         super(size);
+//     }
 
-    private DynamicCircularQueue(int size) {
-        super(size);
-    }
-
-    @Override
-    public static boolean insert() {
-
-    }
-}
+//     @Override
+//     public boolean insert(int value) {
+//         return super.insert(value);
+//     }
+// }
