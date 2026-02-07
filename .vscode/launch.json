@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinaryTree",
+            "request": "launch",
+            "mainClass": "BinaryTree",
+            "projectName": "DSA_559c0c9c"
+        },
+        {
+            "type": "java",
             "name": "ValidParantheses",
             "request": "launch",
             "mainClass": "ValidParantheses",
